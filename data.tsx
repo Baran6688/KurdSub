@@ -35,3 +35,86 @@ export const navlinks: navShape = [
   { title: "ستاف", sublinks: [], href: "" },
   { title: "دەربارە", sublinks: [{ title: "نازانم", href: "" }], href: "" },
 ];
+
+import imdbi from "@/public/imdb.png";
+import rotten from "@/public/rotten.png";
+import metaI from "@/public/meta.png";
+import opp from "@/public/opp.jpeg";
+
+export const sliderFilms = [
+  {
+    title: "Oppenhimer",
+    bg: opp,
+    year: "2013",
+    genres: ["رۆمانسی", "داروبەرد"],
+    short:
+      "لە داهاتوویەکی نزیکدا، مرۆڤایەتی هەستی بینین لە دەست دەدات، لەسەر کۆمەڵگەش پێویستە ڕێگەیەکی دیکە بگرنە بەر",
+    rates: [
+      {
+        name: "Rotten",
+        rate: "8.2",
+        icon: rotten,
+      },
+      {
+        name: "IMDB",
+        rate: "8.2",
+        icon: imdbi,
+      },
+      {
+        name: "meta",
+        rate: "50",
+        icon: metaI,
+      },
+    ],
+  },
+  {
+    title: "Oppenhimer",
+    bg: opp,
+    year: "2013",
+    genres: ["رۆمانسی", "داروبەرد"],
+    short:
+      "لە داهاتوویەکی نزیکدا، مرۆڤایەتی هەستی بینین لە دەست دەدات، لەسەر کۆمەڵگەش پێویستە ڕێگەیەکی دیکە بگرنە بەر",
+    rates: [
+      {
+        name: "Rotten",
+        rate: "8.2",
+        icon: rotten,
+      },
+      {
+        name: "IMDB",
+        rate: "8.2",
+        icon: imdbi,
+      },
+      {
+        name: "meta",
+        rate: "50",
+        icon: metaI,
+      },
+    ],
+  },
+  {
+    title: "Oppenhimer",
+    bg: opp,
+    year: "2013",
+    genres: ["رۆمانسی", "داروبەرد"],
+    short:
+      "لە داهاتوویەکی نزیکدا، مرۆڤایەتی هەستی بینین لە دەست دەدات، لەسەر کۆمەڵگەش پێویستە ڕێگەیەکی دیکە بگرنە بەر",
+    rates: [
+      {
+        name: "Rotten",
+        rate: "8.2",
+        icon: rotten,
+      },
+      {
+        name: "IMDB",
+        rate: "8.2",
+        icon: imdbi,
+      },
+      {
+        name: "meta",
+        rate: "50",
+        icon: metaI,
+      },
+    ],
+  },
+] as const;

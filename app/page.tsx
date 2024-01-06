@@ -1,5 +1,10 @@
-import Image from "next/image"
+import { CarouselFilm } from "@/components/carosel-film";
+import Image from "next/image";
 
 export default function Home() {
-	return <main></main>
+  return (
+    <section className="h-full px-10 py-10">
+      <CarouselFilm />
+    </section>
+  );
 }
