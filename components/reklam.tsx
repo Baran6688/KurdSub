@@ -9,7 +9,7 @@ export default function Reklam() {
       <div className="flex flex-row-reverse justify-between">
         <h3 className="text-[#919193]">ڕێكلام</h3>
         <Link href="" className="flex items-center gap-2">
-          <IoIosArrowBack className=" transition-all hover:-translate-x-3" />
+          <IoIosArrowBack />
           لابردنی ڕێكلام
         </Link>
       </div>

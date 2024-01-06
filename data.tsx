@@ -36,9 +36,9 @@ export const navlinks: navShape = [
   { title: "دەربارە", sublinks: [{ title: "نازانم", href: "" }], href: "" },
 ];
 
-import imdbi from "@/public/imdb.png";
-import rotten from "@/public/rotten.png";
-import metaI from "@/public/meta.png";
+import imdbi from "@/public/imdb.svg";
+import rotten from "@/public/rotten.svg";
+import metaI from "@/public/meta.svg";
 import opp from "@/public/opp.png";
 
 export const sliderFilms = [
@@ -116,5 +116,102 @@ export const sliderFilms = [
         icon: metaI,
       },
     ],
+  },
+] as const;
+
+import movie3 from "@/public/movie3.svg";
+import movie2 from "@/public/movie2.png";
+import movie1 from "@/public/movie1.png";
+export const moviesList = [
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: "400000",
+    image: movie1,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: "400000",
+    image: movie3,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: "400000",
+    image: movie2,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: "400000",
+    image: movie3,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: "400000",
+    image: movie1,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: 400000,
+    image: movie2,
+  },
+  {
+    name: "Shutter Island",
+    genre: "ئەکشن",
+    year: "2012",
+    rates: [
+      { name: "imdb", icon: imdbi, rate: "8.2" },
+      { name: "rotten", icon: rotten, rate: "89" },
+      { name: "meta", icon: metaI, rate: "80" },
+    ],
+    time: "100",
+    views: 400000,
+    image: movie3,
   },
 ] as const;
