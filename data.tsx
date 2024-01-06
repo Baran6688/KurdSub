@@ -39,7 +39,7 @@ export const navlinks: navShape = [
 import imdbi from "@/public/imdb.png";
 import rotten from "@/public/rotten.png";
 import metaI from "@/public/meta.png";
-import opp from "@/public/opp.jpeg";
+import opp from "@/public/opp.png";
 
 export const sliderFilms = [
   {

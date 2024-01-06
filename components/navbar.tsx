@@ -24,7 +24,7 @@ import { Input } from "./ui/input";
 
 export default function Navbar() {
   return (
-    <div className=" md:flex md:flex-row-reverse md:items-center md:justify-between md:border-b-2 md:border-[#313133] md:px-16 md:py-3 md:shadow-md md:shadow-black">
+    <div className=" md:flex md:w-full md:flex-row-reverse md:items-center md:justify-between md:border-b-2 md:border-[#313133] md:px-16 md:py-3 md:shadow-md md:shadow-black">
       <NavigationMenu>
         <NavigationMenuList className="hidden gap-2 text-[#919193]  md:flex md:flex-row-reverse">
           <Image alt="logo" src={kurdsubLogo} className="mx-4" />

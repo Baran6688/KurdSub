@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`h-[3000px]`}>
+      <body className={`flex flex-col items-center`}>
         <Navbar />
         {children}
       </body>

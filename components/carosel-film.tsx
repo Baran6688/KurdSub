@@ -38,7 +38,7 @@ export function CarouselFilm() {
         <CarouselContent>
           {sliderFilms.map((film, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[418px] w-full overflow-hidden rounded-xl">
+              <div className="relative mx-0.5 h-[418px] w-full overflow-hidden rounded-3xl">
                 <div className="absolute right-20 top-1/2 z-20 flex h-[218px] w-[410px] -translate-y-1/2 flex-col items-end gap-2">
                   <div className="flex gap-2">
                     {film.rates?.map((rating, index) => (
