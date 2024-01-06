@@ -33,12 +33,12 @@ export function CarouselFilm() {
   }, [api]);
 
   return (
-    <div className=" flex w-full flex-col items-center justify-center">
+    <div className=" flex w-full flex-col items-center justify-center ">
       <Carousel className="w-11/12" setApi={setApi}>
         <CarouselContent>
           {sliderFilms.map((film, index) => (
             <CarouselItem key={index}>
-              <div className="relative h-[418px] w-[1720px]">
+              <div className="relative h-[418px] w-[1720px] overflow-hidden rounded-xl">
                 <div className="absolute right-20 top-1/2 z-20 flex h-[218px] w-[410px] -translate-y-1/2 flex-col items-end gap-2">
                   <div className="flex gap-2">
                     {film.rates?.map((rating, index) => (
@@ -79,7 +79,7 @@ export function CarouselFilm() {
                 <Image
                   src={film.bg}
                   alt="another movie"
-                  className="w-full object-fill  brightness-50"
+                  className="w-full object-fill brightness-50"
                 />
               </div>
             </CarouselItem>
