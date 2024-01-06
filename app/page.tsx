@@ -1,4 +1,5 @@
 import { CarouselFilm } from "@/components/carosel-film";
+import Reklam from "@/components/reklam";
 import Translator from "@/components/translator";
 import Image from "next/image";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <section className="flex h-full max-w-[1720px] flex-col gap-10 px-20 py-10">
       <CarouselFilm />
       <Translator />
+      <Reklam />
     </section>
   );
 }
