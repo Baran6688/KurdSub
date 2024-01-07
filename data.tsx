@@ -1,3 +1,5 @@
+// things related to data
+
 type navShape = {
   title: string;
   sublinks: { title: string; href: string }[];
