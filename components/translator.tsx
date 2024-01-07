@@ -62,7 +62,7 @@ export default function Translator() {
                   key={i}
                 >
                   <Image src={movie.poster} width="195" alt="movie" />
-                  <span className="text-xl ">Shutter Island</span>
+                  <span className="text-xl ">{movie.title}</span>
                 </CarouselItem>
               ))}
             </CarouselContent>
