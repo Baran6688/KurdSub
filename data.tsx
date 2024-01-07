@@ -217,3 +217,30 @@ export const moviesList = [
     image: movie3,
   },
 ] as const;
+
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import avatar from "@/public/alis.svg";
+
+export const translator = {
+  name: "ئەلیستا عەبدوڵا",
+  icon: avatar,
+  username: "@sanria",
+  socials: [
+    { title: "fb", icon: <FaFacebook /> },
+    { title: "twitter", icon: <FaTwitter /> },
+    { title: "discord", icon: <FaDiscord /> },
+  ],
+  movies: [
+    { title: "", poster: movie1 },
+    { title: "", poster: movie2 },
+    { title: "", poster: movie3 },
+    { title: "", poster: movie1 },
+    { title: "", poster: movie2 },
+    { title: "", poster: movie3 },
+    { title: "", poster: movie1 },
+    { title: "", poster: movie2 },
+    { title: "", poster: movie3 },
+  ],
+} as const;
