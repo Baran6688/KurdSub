@@ -12,12 +12,12 @@ export default function Movies() {
   return (
     <section className=" flex h-[452px] w-full flex-col justify-between">
       <div className="flex flex-row-reverse justify-between">
-        <h2>فیلمەکان</h2>
+        <h2 className="text-2xl">فیلمەکان</h2>
         <Link href="" className="flex items-center gap-2">
           <IoIosArrowBack /> بینیبی زیاتر
         </Link>
       </div>
-      <div className="flex justify-end gap-4">
+      <div className="flex h-[400px]  justify-end gap-4">
         {moviesList.map((movie, index) => (
           <React.Fragment key={index}>
             <div className="flex flex-col justify-between">
