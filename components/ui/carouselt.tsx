@@ -1,5 +1,5 @@
 import * as React from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import UseEmblaCarouselType from "embla-carousel-react";
 import {
   type EmblaCarouselType as CarouselApi,
   type EmblaOptionsType as CarouselOptions,
@@ -18,8 +18,8 @@ type CarouselProps = {
 };
 
 type CarouselContextProps = {
-  carouselRef: ReturnType<typeof useEmblaCarousel>[0];
-  api: ReturnType<typeof useEmblaCarousel>[1];
+  carouselRef: ReturnType<typeof UseEmblaCarouselType>[0];
+  api: ReturnType<typeof UseEmblaCarouselType>[1];
   scrollPrev: () => void;
   scrollNext: () => void;
   canScrollPrev: boolean;
@@ -54,7 +54,7 @@ const Carousel = React.forwardRef<
     },
     ref,
   ) => {
-    const [carouselRef, api] = useEmblaCarousel(
+    const [carouselRef, api] = UseEmblaCarouselType(
       {
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",

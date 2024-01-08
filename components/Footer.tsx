@@ -6,8 +6,8 @@ import Divider from "./divider";
 export default function Footer() {
   return (
     <>
-      <footer className="mt-10 flex h-[430px] w-full max-w-[1920px] flex-col gap-2 border-t-2 border-[#313133] px-20 py-4">
-        <div className="grid h-[90%] grid-cols-5  ">
+      <footer className="mt-10 flex h-[450px] w-full max-w-[1920px] flex-col gap-2 border-t border-[#313133] px-20 py-4">
+        <div className="grid h-[95%] grid-cols-5  ">
           <div className="flex h-5/6 basis-1/5 flex-col items-end gap-4 px-6 text-right">
             <h3 className="text-2xl">کۆمپانیا</h3>
             <ul className=" flex flex-col gap-2 text-[#767676]">
@@ -17,7 +17,7 @@ export default function Footer() {
               <li>پەیوەندی کردن</li>
             </ul>
           </div>
-          <div className="flex h-5/6 basis-1/5 flex-col items-end gap-4 border-l-2 border-[#313133] px-6 text-right">
+          <div className="flex h-5/6 basis-1/5 flex-col items-end gap-4 border-l border-[#313133] px-6 text-right">
             <h3 className="text-2xl">کەتەگۆرییەکان</h3>
             <ul className=" flex flex-col gap-2 text-[#767676]">
               <li>فارسی</li>
@@ -30,7 +30,7 @@ export default function Footer() {
               <li>كۆمیك</li>
             </ul>
           </div>
-          <div className="flex h-5/6 basis-1/5 flex-col  items-end gap-4 border-l-2 border-[#313133] px-6 text-right">
+          <div className="flex h-5/6 basis-1/5 flex-col  items-end gap-4 border-l border-[#313133] px-6 text-right">
             <h3 className="text-2xl">ژانراکان</h3>
             <ul className=" flex flex-col gap-2 text-[#767676]">
               <li>ترسناك</li>
@@ -43,7 +43,7 @@ export default function Footer() {
               <li>ئاسمانی</li>
             </ul>
           </div>
-          <div className="flex h-5/6 basis-1/5 flex-col  items-end gap-4 border-l-2 border-[#313133] px-6 text-right">
+          <div className="flex h-5/6 basis-1/5 flex-col  items-end gap-4 border-l border-[#313133] px-6 text-right">
             <h3 className="text-2xl">بەشەکان</h3>
             <ul className=" flex flex-col gap-2 text-[#767676]">
               <li>سەرەتا</li>
@@ -56,7 +56,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex h-5/6 basis-1/5 flex-col items-end gap-6 border-l-2 border-l-[#313133] text-right">
+          <div className="flex h-5/6 basis-1/5 flex-col items-end gap-6 border-l border-l-[#313133] text-right">
             <h3 className="text-2xl">
               <Image src={kurdsubLogo} alt="log" />
             </h3>
@@ -77,7 +77,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <Divider className="my-[1px]" />
+        <div className="flex h-[%5] w-full items-center justify-center border-t border-[#313133] py-4 text-center">
+          <h3>هەموو مافێكی پارێزراوە بۆ کوردسەبتایتڵ 2023</h3>
+        </div>
       </footer>
     </>
   );
