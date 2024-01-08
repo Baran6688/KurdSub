@@ -21,7 +21,7 @@ export default function Series() {
   return (
     <section className=" flex h-full w-full flex-col justify-between gap-4">
       <div className="flex flex-row-reverse justify-between">
-        <h2 className="text-2xl">فیلمەکان</h2>
+        <h2 className="text-2xl">زنجیرەکان</h2>
         <Link href="" className="flex items-center gap-2">
           <IoIosArrowBack /> بینیبی زیاتر
         </Link>
