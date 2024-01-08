@@ -1,3 +1,5 @@
+import Divider from "@/components/divider";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -17,6 +19,7 @@ export default function RootLayout({
       <body className={`flex flex-col items-center`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
