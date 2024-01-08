@@ -292,3 +292,46 @@ export const comments = [
     year: "2014",
   },
 ] as const;
+
+import ms1 from "@/public/ms1.jpg";
+import ms2 from "@/public/ms2.svg";
+import ms3 from "@/public/ms3.svg";
+
+export const filmSeries = [
+  {
+    title: "ستارشات",
+    number: 21,
+    genres: ["رۆمانسی", "زانستی"],
+    rates: [
+      { name: "IMDB", rate: "8.2", icon: imdbi },
+      { name: "rotten", rate: "59%", icon: rotten },
+      { name: "meta", rate: "80", icon: metaI },
+    ],
+    image: ms1,
+    color: "red-900",
+  },
+  {
+    title: "٣٠٠ پیاوەکە",
+    number: 21,
+    genres: ["رۆمانسی", "زانستی"],
+    rates: [
+      { name: "IMDB", rate: "8.2", icon: imdbi },
+      { name: "rotten", rate: "59%", icon: rotten },
+      { name: "meta", rate: "80", icon: metaI },
+    ],
+    image: ms2,
+    color: "black",
+  },
+  {
+    title: "ئایس بێرگ",
+    number: 21,
+    genres: ["رۆمانسی", "زانستی"],
+    rates: [
+      { name: "IMDB", rate: "8.2", icon: imdbi },
+      { name: "rotten", rate: "59%", icon: rotten },
+      { name: "meta", rate: "80", icon: metaI },
+    ],
+    image: ms3,
+    color: "blue-900",
+  },
+] as const;
