@@ -55,13 +55,17 @@ export default function Translator() {
               align: "end",
             }}
           >
-            <CarouselContent className=" gap-4">
+            <CarouselContent className="md:gap-2 2xl:gap-4">
               {translator.movies.map((movie, i) => (
                 <CarouselItem
-                  className=" mt-2 flex h-full w-fit grow flex-col items-center justify-center"
+                  className=" mt-2 flex w-fit grow flex-col items-center justify-center"
                   key={i}
                 >
-                  <Image src={movie.poster} width="195" alt="movie" />
+                  <Image
+                    src={movie.poster}
+                    className="w-1/4 md:w-1/2 2xl:w-3/4"
+                    alt="movie"
+                  />
                   <span className="text-xl ">{movie.title}</span>
                 </CarouselItem>
               ))}
@@ -73,7 +77,7 @@ export default function Translator() {
         <Image
           src={translateBg}
           alt="translotor"
-          className=" w-full object-contain"
+          className="object-contain md:w-full"
         />
       </div>
     </section>

@@ -157,7 +157,7 @@ const CarouselContent = React.forwardRef<
   return (
     <div
       ref={carouselRef}
-      className="flex h-full w-full items-center justify-end overflow-hidden"
+      className="flex h-full w-fit items-center justify-end overflow-hidden"
     >
       <div
         ref={ref}
@@ -185,7 +185,7 @@ const CarouselItem = React.forwardRef<
       role="group"
       aria-roledescription="slide"
       className={cn(
-        " h-[295px] w-[450px] shrink-0 grow-0 ",
+        " h-fit w-fit shrink-0 grow-0 ",
         orientation === "horizontal" ? "pl-0" : "pt-4",
         className,
       )}

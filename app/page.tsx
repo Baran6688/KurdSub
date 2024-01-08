@@ -6,7 +6,7 @@ import Divider from "@/components/divider";
 import Comments from "@/components/comments";
 export default function Home() {
   return (
-    <main className="flex h-full w-full flex-col gap-10 px-20 py-10">
+    <main className="flex h-full w-full max-w-[1700px] flex-col gap-10 px-20 py-10">
       <CarouselFilm />
       <Translator />
       <Reklam />

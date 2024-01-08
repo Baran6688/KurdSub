@@ -122,8 +122,8 @@ export const sliderFilms = [
 ] as const;
 
 import movie3 from "@/public/movie3.svg";
-import movie2 from "@/public/movie2.png";
-import movie1 from "@/public/movie1.png";
+import movie2 from "@/public/movie2.svg";
+import movie1 from "@/public/movie1.svg";
 export const moviesList = [
   {
     name: "Shutter Island",
