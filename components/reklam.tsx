@@ -13,7 +13,9 @@ export default function Reklam() {
           لابردنی ڕێكلام
         </Link>
       </div>
-      <Image src={reklam} alt="reklam" />
+      <div className="h-[155px] w-full rounded-lg bg-gradient-to-r from-[#313133] to-[#212122]">
+        {/* <Image src={reklam} alt="reklam" /> */}
+      </div>
     </div>
   );
 }
