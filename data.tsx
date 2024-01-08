@@ -245,3 +245,50 @@ export const translator = {
     { title: "Shutter Island", poster: movie3 },
   ],
 } as const;
+
+export const comments = [
+  {
+    user: "ناتالیا عەزیز عەبدوڵا",
+    rating: 4,
+    spoil: false,
+    content:
+      "یەك خۆشترین خواستی دنیای ئەوان نییە لێرەوە بێت بۆ ئەو دنیای ئێمەی بێ ئەوان و ئەوانی بێ ئێمە",
+    movie: "The First Soldier",
+    poster: movie3,
+    genre: "ترسناك",
+    year: "2014",
+  },
+  {
+    user: "ناتالیا عەزیز عەبدوڵا",
+    rating: 2,
+    spoil: true,
+    content:
+      "یەك خۆشترین خواستی دنیای ئەوان نییە لێرەوە بێت بۆ ئەو دنیای ئێمەی بێ ئەوان و ئەوانی بێ ئێمە",
+    movie: "The First Soldier",
+    poster: movie3,
+    genre: "ترسناك",
+    year: "2014",
+  },
+  {
+    user: "ناتالیا عەزیز عەبدوڵا",
+    rating: 2,
+    spoil: true,
+    content:
+      "یەك خۆشترین خواستی دنیای ئەوان نییە لێرەوە بێت بۆ ئەو دنیای ئێمەی بێ ئەوان و ئەوانی بێ ئێمە",
+    movie: "The First Soldier",
+    poster: movie3,
+    genre: "ترسناك",
+    year: "2014",
+  },
+  {
+    user: "ناتالیا عەزیز عەبدوڵا",
+    rating: 2,
+    spoil: true,
+    content:
+      "یەك خۆشترین خواستی دنیای ئەوان نییە لێرەوە بێت بۆ ئەو دنیای ئێمەی بێ ئەوان و ئەوانی بێ ئێمە",
+    movie: "The First Soldier",
+    poster: movie3,
+    genre: "ترسناك",
+    year: "2014",
+  },
+] as const;

@@ -15,6 +15,8 @@ import { FaPlay } from "react-icons/fa";
 import saveList from "@/public/savee.svg";
 import { AvatarImage } from "@radix-ui/react-avatar";
 import avatarImg from "@/public/alis.svg";
+import { comments } from "@/data";
+import Divider from "./divider";
 
 export default function Comments() {
   return (
@@ -30,35 +32,40 @@ export default function Comments() {
           opts={{
             align: "end",
           }}
-          className="flex h-full w-full "
+          className="flex h-full w-full"
         >
           <CarouselContent className="gap-2">
-            {Array.from({ length: 10 }).map((_, index) => (
+            {comments.map((comment, index) => (
               <CarouselItem key={index}>
-                <div className="flex h-full flex-col gap-2 rounded-lg bg-[#212122] px-4 py-2">
-                  <div className="flex h-1/5 w-full flex-row-reverse items-center justify-between border-b-2 border-[#4a4a4a]">
+                <div className="flex h-[300px] w-full flex-col justify-center gap-2 rounded-lg bg-[#212122] px-4 py-4">
+                  <div className="flex h-1/5 w-full flex-row-reverse items-center justify-between">
                     <div className="flex flex-row-reverse items-center gap-2">
                       <Avatar></Avatar>
                       <div className="flex flex-col items-end leading-6">
-                        <span className="m-0">ناتالیا عەزیز عەبدوڵا</span>
-                        <span className="m-0">2 Stars</span>
+                        <span className="m-0">{comment.user}</span>
+                        <span className="m-0">{comment.rating} Stars</span>
                       </div>
                     </div>
                   </div>
-                  <div className="1/4 group relative  text-right ">
-                    <p className="blur-sm transition-all hover:blur-none">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Nobis ipsam tempore quaerat, culpa aliquam doloribus ipsa?
-                      Ullam quibusdam, voluptatibus aliquam tenetur obcaecati
-                      nam dignissimos soluta. Unde culpa harum enim qui?
+                  <Divider />
+                  <div className="group relative h-2/5  text-right ">
+                    <p
+                      className={`${
+                        comment.spoil && "blur-sm"
+                      } transition-all hover:blur-none`}
+                    >
+                      {comment.content}
                     </p>
-                    <span className=" absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 font-bold transition-all group-hover:hidden">
-                      کلیك بکە بۆ بینینی سپۆیڵ
-                    </span>
+
+                    {comment.spoil && (
+                      <span className=" absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 font-bold transition-all group-hover:hidden">
+                        کلیك بکە بۆ بینینی سپۆیڵ
+                      </span>
+                    )}
                   </div>
-                  <div className="flex h-[100px] flex-row-reverse items-end ">
+                  <div className="flex h-2/5 flex-row-reverse items-end ">
                     <Image
-                      src={movie1}
+                      src={comment.poster}
                       alt="Great"
                       className="h-[100px] w-[69px]"
                     />
@@ -72,8 +79,10 @@ export default function Comments() {
                         </div>
                       </div>
                       <div className="flex h-full w-3/5 flex-col items-end justify-center  px-5 text-right">
-                        <span>The First Soldier</span>
-                        <span>2014 / ترسناك</span>
+                        <span>{comment.movie}</span>
+                        <span>
+                          {comment.year} / {comment.genre}
+                        </span>
                       </div>
                     </div>
                   </div>
